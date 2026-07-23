@@ -226,7 +226,7 @@ export default function CV() {
           right: -60px;
           width: 180px;
           height: 180px;
-          background: radial-gradient(circle, rgba(16,185,129,0.12) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(239,68,68,0.12) 0%, transparent 70%);
           pointer-events: none;
         }
         .sidebar::after {
@@ -251,7 +251,7 @@ export default function CV() {
           position: relative;
           z-index: 1;
           overflow: hidden;
-          box-shadow: 0 0 0 3px rgba(16,185,129,0.25), 0 8px 24px rgba(16,185,129,0.2);
+          box-shadow: 0 0 0 3px rgba(239,68,68,0.25), 0 8px 24px rgba(239,68,68,0.2);
         }
 
         .profile-image img {
@@ -273,7 +273,7 @@ export default function CV() {
 
         .sidebar-title {
           text-align: center;
-          color: #10b981;
+          color: #ef4444;
           font-size: 0.78rem;
           font-weight: 600;
           margin-bottom: 0.3rem;
@@ -292,7 +292,7 @@ export default function CV() {
 
         .sidebar-divider {
           height: 1px;
-          background: linear-gradient(90deg, transparent, rgba(16,185,129,0.2), transparent);
+          background: linear-gradient(90deg, transparent, rgba(239,68,68,0.2), transparent);
           margin: 0 0 1.4rem;
           position: relative;
           z-index: 1;
@@ -305,7 +305,7 @@ export default function CV() {
         }
 
         .sidebar-section-title {
-          color: #10b981;
+          color: #ef4444;
           font-size: 0.65rem;
           text-transform: uppercase;
           letter-spacing: 0.12em;
@@ -338,7 +338,7 @@ export default function CV() {
         }
 
         .contact-item .ci-icon {
-          color: #10b981;
+          color: #ef4444;
           min-width: 14px;
           margin-top: 2px;
           font-size: 0.72rem;
@@ -356,9 +356,9 @@ export default function CV() {
         .lang-name { font-size: 0.78rem; color: #a0acb8; }
         .lang-level {
           font-size: 0.62rem;
-          color: #10b981;
+          color: #ef4444;
           font-weight: 600;
-          background: rgba(16,185,129,0.1);
+          background: rgba(239,68,68,0.1);
           padding: 0.12rem 0.5rem;
           border-radius: 4px;
         }
@@ -372,7 +372,7 @@ export default function CV() {
         }
         .lang-bar-fill {
           height: 100%;
-          background: linear-gradient(90deg, #10b981, #34d399);
+          background: linear-gradient(90deg, #ef4444, #f87171);
           border-radius: 3px;
           transition: width 1.2s cubic-bezier(0.22,1,0.36,1);
         }
@@ -392,7 +392,7 @@ export default function CV() {
           width: 5px;
           height: 5px;
           border-radius: 50%;
-          background: #10b981;
+          background: #ef4444;
           opacity: 0.6;
         }
 
@@ -428,9 +428,9 @@ export default function CV() {
           text-decoration: none;
         }
         .social-icon:hover {
-          background: rgba(16,185,129,0.15);
-          color: #10b981;
-          border-color: rgba(16,185,129,0.2);
+          background: rgba(239,68,68,0.15);
+          color: #ef4444;
+          border-color: rgba(239,68,68,0.2);
           transform: translateY(-1px);
         }
 
@@ -492,7 +492,7 @@ export default function CV() {
         .skill-category-title {
           font-size: 0.7rem;
           font-weight: 700;
-          color: #10b981;
+          color: #ef4444;
           text-transform: uppercase;
           letter-spacing: 0.08em;
           margin-bottom: 0.8rem;
@@ -513,8 +513,8 @@ export default function CV() {
           transition: all 0.2s;
         }
         .skill-item:hover {
-          border-color: #10b981;
-          background: #f0fdf4;
+          border-color: #ef4444;
+          background: #fef2f2;
         }
         .skill-item svg { font-size: 0.8rem; }
 
@@ -533,8 +533,8 @@ export default function CV() {
           width: 7px;
           height: 7px;
           border-radius: 50%;
-          background: #10b981;
-          box-shadow: 0 0 0 3px rgba(16,185,129,0.15);
+          background: #ef4444;
+          box-shadow: 0 0 0 3px rgba(239,68,68,0.15);
         }
 
         .exp-item::after {
@@ -572,8 +572,8 @@ export default function CV() {
           letter-spacing: 0.06em;
           padding: 0.15rem 0.5rem;
           border-radius: 4px;
-          background: rgba(16,185,129,0.08);
-          color: #10b981;
+          background: rgba(239,68,68,0.08);
+          color: #ef4444;
         }
 
         .exp-sub-row {
@@ -661,11 +661,11 @@ export default function CV() {
         .project-tech-tag {
           font-size: 0.62rem;
           font-weight: 600;
-          color: #10b981;
-          background: rgba(16,185,129,0.08);
+          color: #ef4444;
+          background: rgba(239,68,68,0.08);
           padding: 0.15rem 0.5rem;
           border-radius: 4px;
-          border: 1px solid rgba(16,185,129,0.1);
+          border: 1px solid rgba(239,68,68,0.1);
         }
 
         /* Education */
@@ -744,10 +744,10 @@ export default function CV() {
           box-shadow: 0 4px 16px rgba(0,0,0,0.2);
         }
         .fab-top {
-          background: #10b981;
+          background: #ef4444;
           color: #fff;
         }
-        .fab-top:hover { background: #059669; transform: scale(1.05); }
+        .fab-top:hover { background: #dc2626; transform: scale(1.05); }
 
         /* ─── PRINT OPTIMIZATION ─── */
         @media print {
@@ -918,7 +918,7 @@ export default function CV() {
             {/* Work Experience */}
             <Reveal delay={100}>
               <div className="section-header">
-                <div className="section-icon" style={{ background: "linear-gradient(135deg, #10b981, #059669)" }}>
+                <div className="section-icon" style={{ background: "linear-gradient(135deg, #ef4444, #dc2626)" }}>
                   <FaBriefcase />
                 </div>
                 <span className="section-title-text">Work Experience</span>
