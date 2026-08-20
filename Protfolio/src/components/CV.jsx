@@ -1,30 +1,32 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import {
   FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt, FaGlobe,
-  FaCode, FaServer, FaLayerGroup, FaTools,
-  FaWhatsapp, FaUsers, FaChartLine, FaStar, FaShieldAlt, FaCheckCircle,
-  FaGraduationCap, FaAward, FaHeart, FaPrint, FaDownload, FaArrowUp,
+  FaCode, FaServer, FaLayerGroup,
+  FaWhatsapp, FaUsers,
+  FaGraduationCap, FaAward, FaHeart, FaArrowUp,
   FaBriefcase, FaCalendarAlt, FaUser
 } from "react-icons/fa";
 import {
   SiReact, SiNodedotjs, SiTailwindcss, SiNextdotjs,
   SiPostgresql, SiFirebase, SiDocker, SiTypescript,
-  SiSupabase, SiFlutter, SiExpo
+  SiSupabase, SiFlutter, SiExpo,
+  SiDotnet, SiGo, SiRedis, SiBootstrap
 } from "react-icons/si";
-import profileImg from "../assets/profile.png";
+import profileImg from "../assets/Profile.jpeg";
 
 // ─── DATA ───────────────────────────────────────────────
 
 const profile = {
-  name: "Anuj Kattel",
+  name: "Khila Raj Regmi",
   title: "Full Stack Developer",
-  email: "anujkattel62@gmail.com",
-  phone: "+977 9825995421",
-  github: "github.com/anujsmit",
-  linkedin: "linkedin.com/in/anujkattel",
-  location: "Jhapa, Nepal",
-  bio: "Full Stack Developer with 4+ years of experience building web and mobile applications.",
+  email: "khilarajregmi@gmail.com",
+  phone: "+977 9800000000",
+  whatsapp: "+977 9800000000",
+  github: "github.com/khilarajregmi",
+  linkedin: "linkedin.com/in/khilarajregmi",
+  location: "Nepal",
+  bio: "Full Stack Developer with experience building robust web and backend applications.",
   image: profileImg
 };
 
@@ -42,7 +44,12 @@ const techIconMap = {
   "TypeScript": <SiTypescript />,
   "REST APIs": <FaServer />,
   "Expo": <SiExpo />,
-  "React Native": <SiReact />
+  "React Native": <SiReact />,
+  ".NET Razor": <SiDotnet />,
+  "Bootstrap": <SiBootstrap />,
+  ".NET Core": <SiDotnet />,
+  "Go": <SiGo />,
+  "Redis": <SiRedis />
 };
 
 const workExperience = [
@@ -109,9 +116,9 @@ const education = [
 ];
 
 const skills = {
-  frontend: ["React", "Next.js", "Tailwind CSS", "Flutter"],
-  backend: ["Node.js", "Supabase", "Firebase", "PostgreSQL"],
-  tools: ["Docker", "Git", "TypeScript", "REST APIs"]
+  frontend: ["React", ".NET Razor", "Bootstrap", "Tailwind CSS"],
+  backend: [".NET Core", "Go", "Node.js", "PostgreSQL", "Redis"],
+  tools: ["Docker", "Git"]
 };
 
 const certifications = [
@@ -173,8 +180,8 @@ export default function CV() {
   return (
     <>
       <Helmet>
-        <title>Anuj Kattel | CV / Resume</title>
-        <meta name="description" content="Full Stack Developer CV — Anuj Kattel" />
+        <title>{profile.name} | CV / Resume</title>
+        <meta name="description" content={`${profile.title} CV — ${profile.name}`} />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </Helmet>
 
@@ -830,7 +837,7 @@ export default function CV() {
               </div>
               <div className="contact-item">
                 <FaWhatsapp className="ci-icon" />
-                <span>+977 9825995421</span>
+                <span>{profile.whatsapp}</span>
               </div>
               <div className="contact-item">
                 <FaMapMarkerAlt className="ci-icon" />
@@ -838,7 +845,7 @@ export default function CV() {
               </div>
               <div className="contact-item">
                 <FaGlobe className="ci-icon" />
-                <a href="https://github.com/anujsmit" target="_blank" rel="noopener noreferrer" style={{ color: '#8a9aa8', textDecoration: 'none' }}>
+                <a href={`https://${profile.github}`} target="_blank" rel="noopener noreferrer" style={{ color: '#8a9aa8', textDecoration: 'none' }}>
                   {profile.github}
                 </a>
               </div>
@@ -880,10 +887,10 @@ export default function CV() {
             <div className="sidebar-section">
               <div className="sidebar-section-title"><FaUsers /> Social</div>
               <div className="social-row">
-                <a href="https://github.com/anujsmit" target="_blank" rel="noopener" className="social-icon"><FaGithub /></a>
-                <a href="https://linkedin.com/in/anujkattel" target="_blank" rel="noopener" className="social-icon"><FaLinkedin /></a>
-                <a href="mailto:anujkattel62@gmail.com" className="social-icon"><FaEnvelope /></a>
-                <a href="https://wa.me/9779825995421" target="_blank" rel="noopener" className="social-icon"><FaWhatsapp /></a>
+                <a href={`https://${profile.github}`} target="_blank" rel="noopener" className="social-icon"><FaGithub /></a>
+                <a href={`https://${profile.linkedin}`} target="_blank" rel="noopener" className="social-icon"><FaLinkedin /></a>
+                <a href={`mailto:${profile.email}`} className="social-icon"><FaEnvelope /></a>
+                <a href={`https://wa.me/${profile.whatsapp.replace(/[\s+]/g, '')}`} target="_blank" rel="noopener" className="social-icon"><FaWhatsapp /></a>
               </div>
             </div>
           </div>

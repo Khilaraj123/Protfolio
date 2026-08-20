@@ -1,16 +1,28 @@
-# React + Vite
+# Khila Raj Regmi — CV / Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page, print-friendly CV built with React + Vite. Renders a two-column
+resume (sidebar + main content) with skills, work experience, projects,
+education, certifications, languages, and interests.
 
-Currently, two official plugins are available:
+## Getting started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+Open http://localhost:5173 to view the app.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Available scripts
 
-## Expanding the ESLint configuration
+- `npm run dev` — start the Vite dev server with HMR
+- `npm run build` — create an optimized production build in `dist/`
+- `npm run preview` — preview the production build locally
+- `npm run lint` — run ESLint
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech stack
+
+- React 19
+- Vite
+- react-icons
+- react-helmet-async (document head management)
