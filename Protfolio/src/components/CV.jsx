@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import {
   FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt, FaGlobe,
-  FaCode, FaServer, FaLayerGroup,
+  FaCode, FaServer,
   FaWhatsapp, FaUsers,
   FaGraduationCap, FaAward, FaHeart, FaArrowUp,
   FaBriefcase, FaCalendarAlt, FaUser
@@ -11,7 +11,7 @@ import {
   SiReact, SiNodedotjs, SiTailwindcss, SiNextdotjs,
   SiPostgresql, SiFirebase, SiDocker, SiTypescript,
   SiSupabase, SiFlutter, SiExpo,
-  SiDotnet, SiGo, SiRedis, SiBootstrap
+  SiDotnet, SiGo, SiRedis, SiBootstrap, SiNuget
 } from "react-icons/si";
 import profileImg from "../assets/Profile.jpeg";
 
@@ -19,14 +19,15 @@ import profileImg from "../assets/Profile.jpeg";
 
 const profile = {
   name: "Khila Raj Regmi",
-  title: "Full Stack Developer",
-  email: "khilarajregmi@gmail.com",
-  phone: "+977 9800000000",
-  whatsapp: "+977 9800000000",
-  github: "github.com/khilarajregmi",
-  linkedin: "linkedin.com/in/khilarajregmi",
-  location: "Nepal",
-  bio: "Full Stack Developer with experience building robust web and backend applications.",
+  title: "Junior ASP.NET Developer",
+  email: "kregmi758@gmail.com",
+  phone: "+977 9804935533",
+  whatsapp: "+977 9804935533",
+  github: "github.com/Khilaraj123",
+  linkedin: "linkedin.com/in/khilaraj-regmi-09ab372a8",
+  nuget: "nuget.org/profiles/Khilaraj123",
+  location: "Arjundhara-5, Jhapa, Nepal",
+  bio: "Junior ASP.NET Developer with experience building web applications. Highly motivated, dedicated, and ambitious with a track record of high achievement and strong organizational and communication skills.",
   image: profileImg
 };
 
@@ -54,64 +55,41 @@ const techIconMap = {
 
 const workExperience = [
   {
-    title: "Co-founder & Lead Developer",
-    company: "ServeX",
-    period: "2026",
-    location: "Jhapa, Nepal",
-    type: "Startup",
+    title: "Junior ASP.NET Developer",
+    company: "Software Projects",
+    period: "1 Year",
+    location: "Nepal",
+    type: "Professional Experience",
     achievements: [
-      "Built Birtamod's first service provider app",
-      "Architected full-stack solution with React Native, Node.js, and Supabase",
-      "Implemented real-time analytics dashboard and multi-business support",
-      "Achieved a 4.9/5 user satisfaction rating",
-      "Processed thousands of customer transactions with high reliability",
-      "Managed entire product lifecycle from ideation to App Store deployment"
+      "Developed robust web services and MVC applications using ASP.NET / ASP.NET Core.",
+      "Designed and integrated responsive frontend user interfaces using Bootstrap and Tailwind CSS.",
+      "Managed and optimized SQL databases (PostgreSQL/SQL Server) for stable application state.",
+      "Demonstrated strong teamwork, self-motivation, time management, and a flexible attitude."
     ]
-  },
-  {
-    title: "Full Stack Developer",
-    company: "Freelance",
-    period: "2021 – Present",
-    location: "Remote",
-    type: "Contract",
-    achievements: [
-      "Delivered 20+ web and mobile applications for clients across 8 countries",
-      "Reduced page load times by 40% through performance optimization techniques",
-      "Integrated secure authentication flows and payment gateways (Stripe, Khalti, eSewa)",
-      "Provided technical consulting, code review, and architecture planning services"
-    ]
-  }
-];
-
-const projects = [
-  {
-    name: "ServeX",
-    desc: "ServeX connects customers with nearby verified service professionals such as plumbers, electricians, cleaners, and technicians.",
-    tech: ["React Native", "Node.js", "Supabase", "PostgreSQL"],
-    link: "#"
-  },
-  {
-    name: "Digital Khata",
-    desc: "Digital Khata is a business management platform that helps shops manage customers, credit records, inventory, billing, and business reports.",
-    tech: ["React", "Node.js", "Firebase", "Tailwind CSS"],
-    link: "#"
   }
 ];
 
 const education = [
   {
-    degree: "SEE",
-    school: "Nidi Education & Indreni Campus",
-    location: "Nepal",
-    period: "2020 – 2022",
-    description: "Basics of programming and knowledge about frontends"
+    degree: "Bachelor (BCA)",
+    school: "Gomendra Multiple College",
+    location: "Jhapa, Nepal",
+    period: "Running",
+    description: "Bachelors of Computer Application, studying computer science, application development, and programming foundations."
   },
   {
-    degree: "Bachelor's in Computer Science",
-    school: "Sikkim Manipal Institute of Technology",
-    location: "India",
-    period: "2024 – present",
-    description: "Specialized in software development, database management, and data structures. Participated in hackathons and coding competitions."
+    degree: "+2 (Civil Engineering)",
+    school: "Bhanu Secondary School",
+    location: "Jhapa, Nepal",
+    period: "2079 B.S.",
+    description: "High School education specialized in Civil Engineering. GPA: 3.25"
+  },
+  {
+    degree: "SEE",
+    school: "Bhanu Secondary School",
+    location: "Jhapa, Nepal",
+    period: "2077 B.S.",
+    description: "Secondary Education Examination. GPA: 3.6"
   }
 ];
 
@@ -122,9 +100,10 @@ const skills = {
 };
 
 const certifications = [
-  "Hackathon Winner",
-  "Google Mobile Web Specialist",
-  "Meta Backend Developer Professional Certificate"
+  "Excellent communication & interpersonal skills",
+  "Self-confident & self-motivated personality",
+  "Willingness to work effectively and efficiently",
+  "Social, organized, and cooperative"
 ];
 
 const languages = [
@@ -869,7 +848,7 @@ export default function CV() {
 
             {/* Certifications */}
             <div className="sidebar-section">
-              <div className="sidebar-section-title"><FaAward /> Certifications</div>
+              <div className="sidebar-section-title"><FaAward /> Appraisal</div>
               {certifications.map(cert => (
                 <div key={cert} className="cert-item">{cert}</div>
               ))}
@@ -887,10 +866,11 @@ export default function CV() {
             <div className="sidebar-section">
               <div className="sidebar-section-title"><FaUsers /> Social</div>
               <div className="social-row">
-                <a href={`https://${profile.github}`} target="_blank" rel="noopener" className="social-icon"><FaGithub /></a>
-                <a href={`https://${profile.linkedin}`} target="_blank" rel="noopener" className="social-icon"><FaLinkedin /></a>
-                <a href={`mailto:${profile.email}`} className="social-icon"><FaEnvelope /></a>
-                <a href={`https://wa.me/${profile.whatsapp.replace(/[\s+]/g, '')}`} target="_blank" rel="noopener" className="social-icon"><FaWhatsapp /></a>
+                <a href={`https://${profile.github}`} target="_blank" rel="noopener" className="social-icon" title="GitHub"><FaGithub /></a>
+                <a href={`https://${profile.linkedin}`} target="_blank" rel="noopener" className="social-icon" title="LinkedIn"><FaLinkedin /></a>
+                <a href={`https://${profile.nuget}`} target="_blank" rel="noopener" className="social-icon" title="NuGet"><SiNuget /></a>
+                <a href={`mailto:${profile.email}`} className="social-icon" title="Email"><FaEnvelope /></a>
+                <a href={`https://wa.me/${profile.whatsapp.replace(/[\s+]/g, '')}`} target="_blank" rel="noopener" className="social-icon" title="WhatsApp"><FaWhatsapp /></a>
               </div>
             </div>
           </div>
@@ -952,31 +932,6 @@ export default function CV() {
                       <li key={j}>{a}</li>
                     ))}
                   </ul>
-                </div>
-              </Reveal>
-            ))}
-
-            {/* Key Projects */}
-            <Reveal delay={100}>
-              <div className="section-header">
-                <div className="section-icon" style={{ background: "linear-gradient(135deg, #8b5cf6, #7c3aed)" }}>
-                  <FaLayerGroup />
-                </div>
-                <span className="section-title-text">Key Projects</span>
-                <div className="section-line" />
-              </div>
-            </Reveal>
-
-            {projects.map((p, i) => (
-              <Reveal key={i} delay={150 + i * 80}>
-                <div className="project-card">
-                  <div className="project-name">{p.name}</div>
-                  <div className="project-desc">{p.desc}</div>
-                  <div className="project-tech">
-                    {p.tech.map(t => (
-                      <span key={t} className="project-tech-tag">{t}</span>
-                    ))}
-                  </div>
                 </div>
               </Reveal>
             ))}
